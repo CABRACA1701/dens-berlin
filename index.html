@@ -22,9 +22,8 @@
       text-align: center;
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
-      z-index: 100;
+      z-index: 1000;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     header img {
@@ -32,11 +31,17 @@
       vertical-align: middle;
     }
     header p {
-      margin: 0.5em 0 0;
+      margin-top: 0.5em;
       font-size: 1.1em;
     }
     nav {
-      margin-top: 0.5em;
+      position: fixed;
+      top: 120px;
+      width: 100%;
+      background-color: #002244;
+      text-align: center;
+      padding: 0.5em 0;
+      z-index: 999;
     }
     nav a {
       display: inline-block;
@@ -48,10 +53,10 @@
       border-radius: 4px;
     }
     nav a:hover {
-      background-color: #002244;
+      background-color: #003366;
     }
     main {
-      padding: 160px 1em 2em; /* Platz für fixierten Header */
+      padding: 200px 1em 2em;
       max-width: 900px;
       margin: auto;
       text-align: center;
@@ -87,14 +92,15 @@
   <header>
     <img src="DENS-Berlin-W.png" alt="DENS Logo weiß">
     <p>Digitale Energiesensibilisierung & Nachhaltigkeitstraining</p>
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="downloads.html">Download</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
   </header>
+
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="downloads.html">Download</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </nav>
 
   <main>
     <p>Willkommen bei DENS Berlin – dem Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.<br>
