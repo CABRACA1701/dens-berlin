@@ -75,7 +75,7 @@
 
     main {
       flex: 1;
-      padding: 200px 1em 120px 1em;
+      padding: 220px 1em 100px 1em;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
@@ -95,7 +95,15 @@
       font-size: 1.1em;
       line-height: 1.5;
     }
-  </style>
+  
+    .nav-buttons a.active {
+      background-color: #ccc;
+      color: #666;
+      cursor: default;
+      pointer-events: none;
+    }
+
+</style>
 </head>
 <body>
 
@@ -125,9 +133,7 @@ Es findet kein Tracking statt.</p>
       <a href="kontakt.html">Kontakt</a>
       <a href="downloads.html">Download</a>
       <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
     </div>
-
     <div class="copyright">
       &copy; 2025 DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)
     </div>
