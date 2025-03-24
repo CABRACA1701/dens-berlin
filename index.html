@@ -1,50 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>DENS Berlin – Digitale Energiesensibilisierung</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DENS Berlin – Digitale Energiesensibilisierung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #002244;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: "✓";
+      margin-right: 0.5rem;
+      color: green;
+    }
+    .cta {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .cta a {
+      background: #fff;
+      color: #003366;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #002244;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .status {
+      background: #e0e0e0;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid #4caf50;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>DENS Berlin</h1>
-        <p>Digitale Energiesensibilisierung & Nachhaltigkeitstraining für Berlin</p>
-        <p><strong>Status:</strong> Eingereicht ✅ | Laufzeit: 02.06.2025 – 29.05.2026</p>
-    </header>
-    <main>
-        <section>
-            <h2>Was ist DENS?</h2>
-            <p>DENS ist ein webbasiertes Schulungs- und Sensibilisierungsprogramm zur Förderung von Energieeffizienz,
-            Klimaschutz und ressourcenschonendem Verhalten in Berlin.</p>
-        </section>
-        <section>
-            <h2>Zielgruppen</h2>
-            <ul>
-                <li>Ältere Menschen</li>
-                <li>Bildungsferne Haushalte</li>
-                <li>Kleine Gewerbebetriebe</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Was bietet DENS?</h2>
-            <ul>
-                <li>Interaktive Energiespar-Checks</li>
-                <li>Alltagstaugliche Schulungsvideos</li>
-                <li>Digitale Energiesparpläne</li>
-                <li>Motivations- & Feedbacksysteme</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Wirkung</h2>
-            <p>Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag und mehr Selbstwirksamkeit.</p>
-        </section>
-        <section>
-            <h2>Mach mit</h2>
-            <p>Fragen? Interesse an Kooperation? <a href="kontakt.html">Kontaktiere uns hier.</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 DENS Berlin Projektträger UG (i.G.)</p>
-        <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
-    </footer>
+  <header>
+    <h1>DENS Berlin</h1>
+    <p>Digitale Energiesensibilisierung & Nachhaltigkeitstraining</p>
+  </header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="projekt.html">Projekt</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="downloads.html">Download</a>
+  </nav>
+  <main>
+    <div class="status">
+      <strong>Status:</strong> Antrag eingereicht ✅ | <strong>Laufzeit:</strong> 02.06.2025 – 29.05.2026
+    </div>
+
+    <section>
+      <h2>Was ist DENS?</h2>
+      <p>
+        DENS ist ein digitales Schulungsprogramm für mehr Energieeffizienz, Klimaschutz und bewussten Alltag in Berlin.
+        Es richtet sich gezielt an Menschen, die von klassischen Maßnahmen bisher kaum erreicht wurden.
+      </p>
+    </section>
+
+    <section>
+      <h2>Zielgruppen</h2>
+      <ul>
+        <li>Ältere Menschen</li>
+        <li>Bildungsferne Haushalte</li>
+        <li>Kleine Gewerbebetriebe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Was bietet DENS?</h2>
+      <ul>
+        <li>Interaktive Energiespar-Checks</li>
+        <li>Alltagstaugliche Schulungsvideos</li>
+        <li>Digitale Energiesparpläne</li>
+        <li>Motivations- & Feedbacksysteme</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Wirkung</h2>
+      <p>
+        Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag und mehr
+        Selbstwirksamkeit. Unterstützt die Berliner Klimaschutzziele.
+      </p>
+    </section>
+
+    <div class="cta">
+      <p>Du willst mehr erfahren oder mitmachen?</p>
+      <a href="kontakt.html">Kontaktiere uns</a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 DENS Berlin Projektträger UG (i.G.) | <a href="impressum.html" style="color:#fff;">Impressum</a> | <a href="datenschutz.html" style="color:#fff;">Datenschutz</a></p>
+  </footer>
 </body>
 </html>
