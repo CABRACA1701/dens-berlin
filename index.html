@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>DENS Berlin – Digitale Energiesensibilisierung</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -15,12 +18,8 @@
     header {
       background-color: #003366;
       color: white;
-      padding: 2em 0 1em 0;
+      padding: 1em 0.5em;
       text-align: center;
-      position: relative;
-      animation: headerAnimation 2s ease-out;
-    }
-    header.fixed {
       position: fixed;
       top: 0;
       left: 0;
@@ -29,41 +28,36 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     header img {
-      width: 100px;
-      margin-bottom: 0.5em;
+      width: 90px;
+      vertical-align: middle;
     }
     header p {
+      margin: 0.5em 0 0;
+      font-size: 1.1em;
+    }
+    nav {
       margin-top: 0.5em;
-      font-size: 1.2em;
-    }
-    @keyframes headerAnimation {
-      0% { transform: translateY(-100px); }
-      50% { transform: translateY(30px); }
-      100% { transform: translateY(0); }
-    }
-    main {
-      text-align: center;
-      padding: 2em 1em;
-      max-width: 900px;
-      margin: auto;
     }
     nav a {
       display: inline-block;
-      margin: 0.5em;
+      margin: 0.3em;
       text-decoration: none;
       color: white;
-      background-color: #003366;
-      padding: 0.6em 1.2em;
+      background-color: #005599;
+      padding: 0.5em 1em;
       border-radius: 4px;
     }
     nav a:hover {
       background-color: #002244;
     }
-    footer {
+    main {
+      padding: 160px 1em 2em; /* Platz für fixierten Header */
+      max-width: 900px;
+      margin: auto;
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
-      padding: 2em;
+    }
+    section {
+      margin: 2em 0;
     }
     .status-box {
       background: #e0f2e0;
@@ -71,14 +65,37 @@
       padding: 1em;
       margin: 2em auto;
       max-width: 700px;
+      text-align: left;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✔ ";
+      color: #008000;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      padding: 2em;
     }
   </style>
 </head>
 <body>
-  <header id="header">
+  <header>
     <img src="DENS-Berlin-W.png" alt="DENS Logo weiß">
     <p>Digitale Energiesensibilisierung & Nachhaltigkeitstraining</p>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="downloads.html">Download</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
   </header>
+
   <main>
     <p>Willkommen bei DENS Berlin – dem Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.<br>
     Hier entsteht eine interaktive Plattform zur Förderung von Energieeffizienz im Alltag – digital, mobil und leicht verständlich.</p>
@@ -113,34 +130,10 @@
       <h2>Wirkung</h2>
       <p>Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag, mehr Selbstwirksamkeit und eine nachhaltige Wirkung über die Projektlaufzeit hinaus.</p>
     </section>
+  </main>
 
-    <div class="cta">
-      <p>Du willst mehr erfahren oder mitmachen?</p>
-      <a href="kontakt.html">Kontaktiere uns</a>
-    </div>
-  
-    <nav>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="downloads.html">Download</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
-    </main>
-    
   <footer>
     &copy; 2025 DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)
   </footer>
-
-  <script>
-    // Fixiert den Header beim Scrollen
-    window.onscroll = function() {
-      var header = document.getElementById("header");
-      if (window.pageYOffset > header.offsetHeight) {
-        header.classList.add("fixed");
-      } else {
-        header.classList.remove("fixed");
-      }
-    };
-  </script>
 </body>
 </html>
