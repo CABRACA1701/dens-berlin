@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -31,7 +30,7 @@
     }
 
     header img {
-      width: 100px;
+      width: 75px;
       margin-bottom: 0.5em;
     }
 
@@ -65,16 +64,33 @@
       background-color: #002244;
     }
 
+    .copyright {
+      font-size: 0.8em;
+      margin-top: 0.8em;
+      color: rgb(0,85,153);
+    }
+
     main {
       flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 200px 1em 120px 1em;
-      max-width: 900px;
-      margin: 0 auto;
       box-sizing: border-box;
     }
 
-    section {
-      margin: 2em 0;
+    .content-wrapper {
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      padding: 2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .welcome {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 2em;
     }
 
     .status-box {
@@ -83,6 +99,21 @@
       padding: 1em;
       margin: 2em 0;
       text-align: left;
+    }
+
+    .flex-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1 1 45%;
+    }
+
+    .column h2 {
+      margin-bottom: 0.5em;
     }
 
     ul {
@@ -94,6 +125,11 @@
       content: "✔ ";
       color: #008000;
     }
+
+    section {
+      margin: 2em 0;
+    }
+
   </style>
 </head>
 <body>
@@ -104,41 +140,45 @@
   </header>
 
   <main>
-    <section>
-      <p><br><strong>Willkommen bei DENS Berlin</strong> – dem Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.<br>
-      Hier entsteht eine interaktive Plattform zur Förderung von Energieeffizienz im Alltag – digital, mobil und leicht verständlich.</p>
-    </section>
+    <div class="content-wrapper">
+      <div class="welcome">
+        <p><strong>Willkommen bei DENS Berlin – einem Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.</strong></p>
+        <p>Eine interaktive Plattform zur Förderung von Energieeffizienz im Alltag – digital, mobil und leicht verständlich.</p>
+      </div>
 
-    <div class="status-box">
-      <strong>Status:</strong> Antrag eingereicht ✅<br>
-      <strong>Laufzeit:</strong> 02.06.2025 – 29.05.2026<br>
-      <strong>Fördersumme:</strong> 180.000 € BENE II<br>
-      <strong>Eigenanteil:</strong> 120.000 € (Rücklagenstrategie)
+      <div class="status-box">
+        <strong>Status:</strong> Antrag eingereicht ✅<br>
+        <strong>Laufzeit:</strong> 02.06.2025 – 29.05.2026<br>
+        <strong>Fördersumme:</strong> 180.000 € BENE II<br>
+        <strong>Eigenanteil:</strong> 120.000 € (Rücklagenstrategie)
+      </div>
+
+      <div class="flex-columns">
+        <div class="column">
+          <h2>Zielgruppen</h2>
+          <ul>
+            <li>Ältere Menschen mit wenig Zugang zu Bildung</li>
+            <li>Haushalte mit geringer Energiekompetenz</li>
+            <li>Kleine Gewerbebetriebe in Berliner Bezirken</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h2>Projektbausteine</h2>
+          <ul>
+            <li>Interaktive Energiespar-Checks</li>
+            <li>Alltagstaugliche Schulungsvideos</li>
+            <li>Digitale Energiesparpläne</li>
+            <li>Feedback- & Motivationssysteme</li>
+          </ul>
+        </div>
+      </div>
+
+      <section>
+        <h2>Wirkung</h2>
+        <p>Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag, mehr Selbstwirksamkeit und eine nachhaltige Wirkung über die Projektlaufzeit hinaus.</p>
+      </section>
     </div>
-
-    <section>
-      <h2>Zielgruppen</h2>
-      <ul>
-        <li>Ältere Menschen mit wenig Zugang zu Bildung</li>
-        <li>Haushalte mit geringer Energiekompetenz</li>
-        <li>Kleine Gewerbebetriebe in Berliner Bezirken</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projektbausteine</h2>
-      <ul>
-        <li>Interaktive Energiespar-Checks</li>
-        <li>Alltagstaugliche Schulungsvideos</li>
-        <li>Digitale Energiesparpläne</li>
-        <li>Feedback- & Motivationssysteme</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Wirkung</h2>
-      <p>Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag, mehr Selbstwirksamkeit und eine nachhaltige Wirkung über die Projektlaufzeit hinaus.</p>
-    </section>
   </main>
 
   <footer>
@@ -149,8 +189,8 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </div>
-    <div style="margin-top: 1em;">
-      <span style="color: rgb(0,85,153)">&copy; 2025 DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)</span>
+    <div class="copyright">
+      &copy; 2025 DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)
     </div>
   </footer>
 
