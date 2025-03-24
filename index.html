@@ -10,7 +10,7 @@
       padding: 0;
       height: 100%;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #ffffff;
       color: #003366;
     }
 
@@ -23,7 +23,7 @@
       background-color: #003366;
       color: white;
       text-align: center;
-      padding: 1em 1em 0.5em 1em;
+      padding: 1.2em 1em 1em 1em;
       position: fixed;
       top: 0;
       width: 100%;
@@ -66,18 +66,18 @@
     }
 
     .copyright {
-      font-size: 0.8em;
+      font-size: 0.7em;
       margin-top: 0.8em;
       color: rgb(0,85,153);
     }
 
     main {
       flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding: 200px 1em 120px 1em;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     .content-wrapper {
@@ -90,8 +90,13 @@
 
     .welcome {
       text-align: center;
-      font-size: 1.2em;
-      margin-bottom: 2em;
+      font-size: 1.1em;
+      margin-bottom: 3em;
+      line-height: 1.4;
+    }
+
+    .welcome p {
+      margin: 0.3em 0;
     }
 
     .status-box {
@@ -99,7 +104,17 @@
       border-left: 6px solid rgb(0,85,153);
       padding: 1em;
       margin: 2em 0;
-      text-align: left;
+    }
+
+    .status-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    .status-flex div {
+      flex: 1 1 45%;
     }
 
     .flex-columns {
@@ -120,6 +135,7 @@
     ul {
       list-style: none;
       padding-left: 0;
+      line-height: 1.6;
     }
 
     ul li::before {
@@ -130,7 +146,6 @@
     section {
       margin: 2em 0;
     }
-
   </style>
 </head>
 <body>
@@ -143,15 +158,22 @@
   <main>
     <div class="content-wrapper">
       <div class="welcome">
-        <p>Willkommen bei DENS Berlin,<br>ein Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.</p>
-        <p>Eine interaktive Plattform zur Förderung von Energieeffizienz im Alltag.<br><em>digital – mobil – verständlich</em></p>
+        <p>Willkommen bei DENS Berlin, ein Projekt für digitale Aufklärung und Klimaschutz in der Hauptstadt.</p>
+        <p>Förderung von Energieeffizienz im Alltag durch eine interaktive Plattform.</p>
+        <p><strong>digital – mobil – verständlich</strong></p>
       </div>
 
       <div class="status-box">
-        <strong>Status:</strong> Antrag eingereicht ✅<br>
-        <strong>Laufzeit:</strong> 02.06.2025 – 29.05.2026<br>
-        <strong>Fördersumme:</strong> 180.000 € BENE II<br>
-        <strong>Eigenanteil:</strong> 120.000 € (Rücklagenstrategie)
+        <div class="status-flex">
+          <div>
+            <strong>Status:</strong> Antrag eingereicht ✔<br>
+            <strong>Laufzeit:</strong> 02.06.2025 – 29.05.2026
+          </div>
+          <div>
+            <strong>Fördersumme:</strong> 180.000 € BENE II<br>
+            <strong>Eigenanteil:</strong> 120.000 € (Rücklagenstrategie)
+          </div>
+        </div>
       </div>
 
       <div class="flex-columns">
