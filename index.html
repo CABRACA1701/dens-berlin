@@ -17,34 +17,35 @@
       color: white;
       padding: 2em 0 1em 0;
       text-align: center;
+      position: relative;
+      animation: headerAnimation 2s ease-out;
+    }
+    header.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     header img {
       width: 100px;
       margin-bottom: 0.5em;
+    }
+    header p {
+      margin-top: 0.5em;
+      font-size: 1.2em;
+    }
+    @keyframes headerAnimation {
+      0% { transform: translateY(-100px); }
+      50% { transform: translateY(30px); }
+      100% { transform: translateY(0); }
     }
     main {
       text-align: center;
       padding: 2em 1em;
       max-width: 900px;
       margin: auto;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    section {
-      margin: 2em 0;
-    }
-    h2 {
-      color: #002244;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "✔ ";
-      color: #008000;
     }
     nav a {
       display: inline-block;
@@ -74,7 +75,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="header">
     <img src="DENS-Berlin-W.png" alt="DENS Logo weiß">
     <p>Digitale Energiesensibilisierung & Nachhaltigkeitstraining</p>
   </header>
@@ -113,15 +114,25 @@
       <p>Ziel ist ein dauerhafter Bewusstseinswandel durch digitales Empowerment – für weniger CO₂ im Alltag, mehr Selbstwirksamkeit und eine nachhaltige Wirkung über die Projektlaufzeit hinaus.</p>
     </section>
 
-    <nav>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="downloads.html">Download</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
+    <div class="cta">
+      <p>Du willst mehr erfahren oder mitmachen?</p>
+      <a href="kontakt.html">Kontaktiere uns</a>
+    </div>
   </main>
   <footer>
     &copy; 2025 DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)
   </footer>
+
+  <script>
+    // Fixiert den Header beim Scrollen
+    window.onscroll = function() {
+      var header = document.getElementById("header");
+      if (window.pageYOffset > header.offsetHeight) {
+        header.classList.add("fixed");
+      } else {
+        header.classList.remove("fixed");
+      }
+    };
+  </script>
 </body>
 </html>
