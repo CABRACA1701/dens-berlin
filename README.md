@@ -1,22 +1,23 @@
-# DENS Berlin
+# DENS – Digitale Entwicklung für Neugier mit Selbstwert
 
-**Digitale Energiesensibilisierung & Nachhaltigkeitstraining**
+Ein digitales Bildungsprojekt für Jugendliche und junge Erwachsene im ländlichen Raum.
 
 ---
 
 ## Projektbeschreibung
 
-DENS Berlin ist ein digitales Informations- und Schulungsprojekt mit dem Ziel, schwer erreichbare Zielgruppen für Energieeffizienz und nachhaltiges Verhalten zu sensibilisieren. Die Inhalte richten sich insbesondere an bildungsferne Haushalte, ältere Menschen sowie kleine Gewerbebetriebe in Berlin.
+DENS fördert digitale Selbstwirksamkeit, Resilienz und Teilhabe.  
+Im Fokus stehen junge Menschen mit Benachteiligung, Behinderung oder eingeschränktem Zugang zu Bildungsangeboten.
 
-Die Plattform wird als niedrigschwellige und interaktive Weblösung umgesetzt. Sie bietet alltagsnahe Tipps, visuelle Schulungselemente und motivierende Energiesparhilfen – abrufbar über mobile Endgeräte und Desktop.
+Die Plattform kombiniert Online-Module, Peer-Trainings und Begleitung vor Ort – niedrigschwellig, barrierefrei und skalierbar.
 
-Das Projekt wurde im Rahmen des Förderprogramms **BENE 2 – Berliner Programm für nachhaltige Entwicklung** beantragt und befindet sich aktuell in der Vorbereitungsphase.
+Das Projekt wurde im April 2025 bei **Aktion Mensch** eingereicht (Förderlinie: *Kinder und Jugendliche stärken*) und befindet sich in Vorbereitung.
 
 ---
 
 ## Hosting & Domain
 
-Die Website wird über **GitHub Pages** bereitgestellt und ist unter folgender Domain erreichbar:
+Die Seite wird über **GitHub Pages** bereitgestellt:
 
 🔗 https://dens.resilienzdigital.de
 
@@ -24,11 +25,10 @@ Die Website wird über **GitHub Pages** bereitgestellt und ist unter folgender D
 
 ## Verantwortlich
 
-**DENS Berlin Projektträger UG (haftungsbeschränkt, i.G.)**  
+**DENS e.V. (in Gründung)**  
 Stölkenstraße 16  
-19339 Plattenburg OT Glöwen
-
-📧 E-Mail: dens@resilienzdigital.de
+19339 Plattenburg OT Glöwen  
+📧 projekt@resilienzdigital.de
 
 ---
 
